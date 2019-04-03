@@ -9,6 +9,7 @@ defmodule ICalendar.Event do
             rrule: nil,
             exdates: [],
             recurrence_id: nil,
+            dtstamp: nil,
             description: nil,
             location: nil,
             url: nil,
