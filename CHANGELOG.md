@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
+- Fixed atom table exhaustion vulnerability by using `to_existing_atom` instead of `to_atom` when processing untrusted ICS files. ([#75](https://github.com/lpil/icalendar/pull/75) by @nixxquality)
+- Support for arbitrary calendar headers via options (e.g., METHOD for RSVP buttons). ([#56](https://github.com/lpil/icalendar/pull/56) by @nickgartmann)
+- Gmail compatibility: ORGANIZER field now uses semi-colon separator as required. ([#70](https://github.com/lpil/icalendar/pull/70) by @maedhr)
+
 ## v1.1.2 - 2022-01-16
 
 - Handle calendars that wrap output such as Google Calendar
